@@ -32,13 +32,14 @@ DROP PROCEDURE dbo.getBookCountAtBranch
 GO
 CREATE PROCEDURE dbo.getBookCountAtBranch
     @branch VARCHAR(100), 
-    @book VARCHAR(200) 
+    @book VARCHAR(200)
 
 AS
     SELECT cop.Number_of_Copies as 'Branch Copies'
     FROM BOOK_COPIES as cop
     INNER JOIN LIBRARY_BRANCH as lb ON cop.BranchID = lb.BranchID
-    WHERE lb.BranchName = @branch AND cop.BookID = @book
+    INNER JOIN BOOKS b ON cop.BookID = b.BookID
+    WHERE lb.BranchName = @branch AND b.Title = @book
 GO
 
 EXEC dbo.getBookCountAtBranch @branch = 'Sharpstown Library', @book = 'The Lost Tribe';
@@ -62,7 +63,8 @@ AS
     SELECT  lb.BranchName as 'Library', cop.Number_of_Copies as 'Branch Copies'
     FROM BOOK_COPIES as cop
     INNER JOIN LIBRARY_BRANCH as lb ON cop.BranchID = lb.BranchID
-    WHERE cop.BookID = @book
+    INNER JOIN BOOKS b ON cop.BookID = b.BookID
+    WHERE b.Title = @book
 ;
 GO
 
@@ -97,6 +99,17 @@ EXECUTE dbo.NoBooksCheckedOut
 GO
 
 
+
+INSERT INTO [dbo].[BOOK_LOANS]
+( -- Columns to insert data into
+ [BookID], [BranchID], [CardNo], [DateOut], [DateDue]
+) -- BookID = BOOKS.Title, BranchID = LIBRARY_BRANCH.BranchID, CardNo = BORROWER.CardNo, Date format YYYY-MM-DD
+VALUES
+(1, 6, 1, '2019-01-01', CONVERT (date, GETDATE()))
+GO
+
+SELECT * FROM BOOK_LOANS;
+
 -- 4.) For each book that is loaned out from the "Sharpstown" 
 -- branch and whose DueDate is today, retrieve the book title, 
 -- the borrower's name, and the borrower's address.
@@ -114,10 +127,11 @@ GO
 CREATE PROCEDURE dbo.DueToday
     @branch VARCHAR(100)
 AS
-    SELECT loan.BookID, bor.Name, bor.Addresss
+    SELECT b.Title, bor.Name, bor.Addresss
     FROM BOOK_LOANS loan
     INNER JOIN BORROWER bor ON loan.CardNo = bor.CardNo
     INNER JOIN LIBRARY_BRANCH as lb ON loan.BranchID = lb.BranchID
+    INNER JOIN BOOKS b ON loan.BookID = b.BookID
     WHERE CONVERT(varchar(10), loan.DateDue, 102) 
         = CONVERT(varchar(10), GETDATE(), 102) 
         AND lb.BranchName = @branch
@@ -141,7 +155,7 @@ DROP PROCEDURE dbo.BranchLoaned
 GO
 CREATE PROCEDURE dbo.BranchLoaned
 AS
-    SELECT lb.BranchName, COUNT(*)
+    SELECT lb.BranchName, COUNT(*) as 'Number of Copies Loaned'
     FROM LIBRARY_BRANCH lb
     INNER JOIN BOOK_LOANS bl ON lb.BranchID = bl.BranchID
     GROUP BY lb.BranchName
@@ -203,7 +217,7 @@ CREATE PROCEDURE dbo.BooksByAuthorAtBranch
 AS
     SELECT b.Title, bc.Number_Of_Copies as 'Copies'
     FROM BOOK_COPIES bc
-    INNER JOIN BOOKS b ON b.Title = bc.BookID
+    INNER JOIN BOOKS b ON b.BookID = bc.BookID
     INNER JOIN BOOK_AUTHORS ba ON ba.BookID = b.BookID
     INNER JOIN LIBRARY_BRANCH lb ON lb.BranchID = bc.BranchID
     WHERE ba.AuthorName LIKE CONCAT('%', @author, '%') 

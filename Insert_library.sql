@@ -61,8 +61,6 @@ ALTER TABLE BOOKS
     ALTER COLUMN Title varchar(200);
 GO
 
-
-
 SELECT * FROM PUBLISHER;
 
 -- Insert rows into table 'BOOKS'[dbo]'
@@ -192,397 +190,397 @@ INSERT INTO [dbo].[BOOK_COPIES]
 )
 VALUES 
 (  -- Hermiston Library
-    'After Alice', '1', '2'
+    9, '1', '2'
 ),
 ( 
-    'Black House', '1', '2'
+    2, '1', '2'
 ),
 ( 
-    'Downhill from Here', '1', '2'
+    20, '1', '2'
 ),
 ( 
-    'Harry Potter and the Deathly Hallows', '1', '2'
+    13, '1', '2'
 ),
 ( 
-    'Harry Potter and the Goblet of Fire', '1', '4'
+    11, '1', '4'
 ),
 ( 
-    'Harry Potter and the Order of the Phoenix', '1', '3'
+    14, '1', '3'
 ),
 ( 
-    'Harry Potter and the Philosophers Stone', '1', '4'
+    12, '1', '4'
 ),
 ( 
-    'Joy on Demand: The Art of Discerning the Happiness Within', '1', '2'
+    10, '1', '2'
 ),
 ( 
-    'My Own Words', '1', '2'
+    6, '1', '2'
 ),
 ( 
-    'Nine Pints', '1', '2'
+    22, '1', '2'
 ),
 ( 
-    'Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking', '1', '2'
+    4, '1', '2'
 ),
 ( 
-    'Sapiens: A Brief History of Humankind', '1', '2'
+    7, '1', '2'
 ),
 ( 
-    'Shoe Dog: A Memoir by the Creator of Nike', '1', '2'
+    5, '1', '2'
 ),
 ( 
-    'The Alchemist', '1', '3'
+    8, '1', '3'
 ),
 ( 
-    'The Cassandra', '1', '3'
+    18, '1', '3'
 ),
 ( 
-    'The Eating Instinct', '1', '2'
+    21, '1', '2'
 ),
 ( 
-    'The Empire and the Five Kings', '1', '2'
+    19, '1', '2'
 ),
 ( 
-    'The House Next Door', '1', '2'
+    15, '1', '2'
 ),
 ( 
-    'The Lost Tribe', '1', '2'
+    1, '1', '2'
 ),
 (
-    'The Power', '1', '2'
+    16, '1', '2'
 ),
 ( 
-    'The Wolf in the Whale', '1', '3'
+    17, '1', '3'
 ),
 ( 
-    'Under the Dome', '1', '3'
+    3, '1', '3'
 ),
 ( -- Brooklyn Public Library
-    'After Alice', '2', '2'
+    9, '2', '2'
 ),
 ( 
-    'Black House', '2', '2'
+    2, '2', '2'
 ),
 ( 
-    'Harry Potter and the Deathly Hallows', '2', '2'
+    13, '2', '2'
 ),
 ( 
-    'Harry Potter and the Goblet of Fire', '2', '2'
+    11, '2', '2'
 ),
 ( 
-    'Harry Potter and the Order of the Phoenix', '2', '2'
+    14, '2', '2'
 ),
 ( 
-    'Harry Potter and the Philosophers Stone', '2', '2'
+    12, '2', '2'
 ),
 ( 
-    'My Own Words', '2', '2'
+    6, '2', '2'
 ),
 ( 
-    'Nine Pints', '2', '2'
+    22, '2', '2'
 ),
 ( 
-    'Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking', '2', '2'
+    4, '2', '2'
 ),
 ( 
-    'Shoe Dog: A Memoir by the Creator of Nike', '2', '2'
+    5, '2', '2'
 ),
 ( 
-    'The Alchemist', '2', '2'
+    8, '2', '2'
 ),
 ( 
-    'The Cassandra', '2', '2'
+    18, '2', '2'
 ),
 ( 
-    'The Eating Instinct', '2', '2'
+    21, '2', '2'
 ),
 ( 
-    'The House Next Door', '2', '2'
+    15, '2', '2'
 ),
 ( 
-    'The Lost Tribe', '2', '2'
+    1, '2', '2'
 ),
 ( 
-    'The Wolf in the Whale', '2', '2'
+    17, '2', '2'
 ),
 ( 
-    'Under the Dome', '2', '2'
+    3, '2', '2'
 ),
 ( -- Boston 
-    'After Alice', '3', '3'
+    9, '3', '3'
 ),
 ( 
-    'Downhill from Here', '3', '2'
+    20, '3', '2'
 ),
 ( 
-    'Harry Potter and the Deathly Hallows', '3', '3'
+    13, '3', '3'
 ),
 ( 
-    'Harry Potter and the Goblet of Fire', '3', '2'
+    11, '3', '2'
 ),
 ( 
-    'Harry Potter and the Order of the Phoenix', '3', '2'
+    14, '3', '2'
 ),
 ( 
-    'Harry Potter and the Philosophers Stone', '3', '3'
+    12, '3', '3'
 ),
 ( 
-    'Joy on Demand: The Art of Discerning the Happiness Within', '3', '2'
+    10, '3', '2'
 ),
 ( 
-    'My Own Words', '3', '2'
+    6, '3', '2'
 ),
 ( 
-    'Nine Pints', '3', '3'
+    22, '3', '3'
 ),
 ( 
-    'The Alchemist', '3', '2'
+    8, '3', '2'
 ),
 ( 
-    'The Cassandra', '3', '2'
+    18, '3', '2'
 ),
 ( 
-    'The Eating Instinct', '3', '3'
+    21, '3', '3'
 ),
 ( 
-    'The Empire and the Five Kings', '3', '2'
+    19, '3', '2'
 ),
 ( 
-    'The House Next Door', '3', '2'
+    15, '3', '2'
 ),
 ( 
-    'The Lost Tribe', '3', '2'
+    1, '3', '2'
 ),
 (
-    'The Power', '3', '3'
+    16, '3', '3'
 ),
 ( 
-    'The Wolf in the Whale', '3', '2'
+    17, '3', '2'
 ),
 ( 
-    'Under the Dome', '3', '2'
+    3, '3', '2'
 ),
 ( -- Library of Congress
-    'After Alice', '4', '2'
+    9, '4', '2'
 ),
 ( 
-    'Black House', '4', '3'
+    2, '4', '3'
 ),
 ( 
-    'Downhill from Here', '4', '2'
+    20, '4', '2'
 ),
 ( 
-    'Harry Potter and the Deathly Hallows', '4', '3'
+    13, '4', '3'
 ),
 ( 
-    'Harry Potter and the Goblet of Fire', '4', '2'
+    11, '4', '2'
 ),
 ( 
-    'Harry Potter and the Order of the Phoenix', '4', '3'
+    14, '4', '3'
 ),
 ( 
-    'Harry Potter and the Philosophers Stone', '4', '3'
+    12, '4', '3'
 ),
 ( 
-    'Joy on Demand: The Art of Discerning the Happiness Within', '4', '2'
+    10, '4', '2'
 ),
 ( 
-    'My Own Words', '4', '3'
+    6, '4', '3'
 ),
 ( 
-    'Nine Pints', '4', '2'
+    22, '4', '2'
 ),
 ( 
-    'Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking', '4', '3'
+    4, '4', '3'
 ),
 ( 
-    'Sapiens: A Brief History of Humankind', '4', '2'
+    7, '4', '2'
 ),
 ( 
-    'Shoe Dog: A Memoir by the Creator of Nike', '4', '2'
+    5, '4', '2'
 ),
 ( 
-    'The Alchemist', '4', '3'
+    8, '4', '3'
 ),
 ( 
-    'The Cassandra', '4', '2'
+    18, '4', '2'
 ),
 (
-    'The Power', '4', '2'
+    16, '4', '2'
 ),
 ( 
-    'The Wolf in the Whale', '4', '3'
+    17, '4', '3'
 ),
 ( 
-    'Under the Dome', '4', '2'
+    3, '4', '2'
 ),
 ( -- Sharpstown
-    'After Alice', '5', '3'
+    9, '5', '3'
 ),
 ( 
-    'Black House', '5', '2'
+    2, '5', '2'
 ),
 ( 
-    'Downhill from Here', '5', '3'
+    20, '5', '3'
 ),
 ( 
-    'Joy on Demand: The Art of Discerning the Happiness Within', '5', '2'
+    10, '5', '2'
 ),
 ( 
-    'My Own Words', '5', '3'
+    6, '5', '3'
 ),
 ( 
-    'Nine Pints', '5', '2'
+    22, '5', '2'
 ),
 ( 
-    'Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking', '5', '3'
+    4, '5', '3'
 ),
 ( 
-    'Sapiens: A Brief History of Humankind', '5', '2'
+    7, '5', '2'
 ),
 ( 
-    'Shoe Dog: A Memoir by the Creator of Nike', '5', '3'
+    5, '5', '3'
 ),
 ( 
-    'The Alchemist', '5', '2'
+    8, '5', '2'
 ),
 ( 
-    'The Cassandra', '5', '2'
+    18, '5', '2'
 ),
 ( 
-    'The Eating Instinct', '5', '3'
+    21, '5', '3'
 ),
 ( 
-    'The Empire and the Five Kings', '5', '2'
+    19, '5', '2'
 ),
 ( 
-    'The House Next Door', '5', '3'
+    15, '5', '3'
 ),
 ( 
-    'The Lost Tribe', '5', '2'
+    1, '5', '2'
 ),
 (
-    'The Power', '5', '2'
+    16, '5', '2'
 ),
 ( 
-    'The Wolf in the Whale', '5', '3'
+    17, '5', '3'
 ),
 ( 
-    'Under the Dome', '5', '2'
+    3, '5', '2'
 ),
 ( -- Henry Madden
-    'After Alice', '6', '2'
+    9, '6', '2'
 ),
 ( 
-    'Black House', '6', '3'
+    2, '6', '3'
 ),
 ( 
-    'Downhill from Here', '6', '2'
+    20, '6', '2'
 ),
 ( 
-    'Harry Potter and the Deathly Hallows', '6', '3'
+    13, '6', '3'
 ),
 ( 
-    'Harry Potter and the Goblet of Fire', '6', '3'
+    11, '6', '3'
 ),
 ( 
-    'Harry Potter and the Order of the Phoenix', '6', '2'
+    14, '6', '2'
 ),
 ( 
-    'Harry Potter and the Philosophers Stone', '6', '3'
+    12, '6', '3'
 ),
 ( 
-    'Joy on Demand: The Art of Discerning the Happiness Within', '6', '2'
+    10, '6', '2'
 ),
 ( 
-    'My Own Words', '6', '3'
+    6, '6', '3'
 ),
 ( 
-    'Nine Pints', '6', '2'
+    22, '6', '2'
 ),
 ( 
-    'Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking', '6', '3'
+    4, '6', '3'
 ),
 ( 
-    'Sapiens: A Brief History of Humankind', '6', '2'
+    7, '6', '2'
 ),
 ( 
-    'Shoe Dog: A Memoir by the Creator of Nike', '6', '3'
+    5, '6', '3'
 ),
 ( 
-    'The Alchemist', '6', '2'
+    8, '6', '2'
 ),
 ( 
-    'The Cassandra', '6', '3'
+    18, '6', '3'
 ),
 ( 
-    'The Eating Instinct', '6', '3'
+    21, '6', '3'
 ),
 ( 
-    'The Empire and the Five Kings', '6', '2'
+    19, '6', '2'
 ),
 ( 
-    'The House Next Door', '6', '3'
+    15, '6', '3'
 ),
 ( 
-    'The Lost Tribe', '6', '2'
+    1, '6', '2'
 ),
 ( -- Central Library
-    'After Alice', '7', '3'
+    9, '7', '3'
 ),
 (
-    'Black House', 7, 2
+    2, 7, 2
 ),
 ( 
-    'Harry Potter and the Deathly Hallows', '7', '2'
+    13, '7', '2'
 ),
 ( 
-    'Harry Potter and the Goblet of Fire', '7', '3'
+    11, '7', '3'
 ),
 ( 
-    'Harry Potter and the Order of the Phoenix', '7', '2'
+    14, '7', '2'
 ),
 ( 
-    'Harry Potter and the Philosophers Stone', '7', '2'
+    12, '7', '2'
 ),
 ( 
-    'Joy on Demand: The Art of Discerning the Happiness Within', '7', '3'
+    10, '7', '3'
 ),
 ( 
-    'My Own Words', '7', '3'
+    6, '7', '3'
 ),
 ( 
-    'Nine Pints', '7', '2'
+    22, '7', '2'
 ),
 ( 
-    'Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking', '7', '3'
+    4, '7', '3'
 ),
 ( 
-    'Sapiens: A Brief History of Humankind', '7', '2'
+    7, '7', '2'
 ),
 ( 
-    'The Cassandra', '7', '2'
+    18, '7', '2'
 ),
 ( 
-    'The Eating Instinct', '7', '3'
+    21, '7', '3'
 ),
 ( 
-    'The Empire and the Five Kings', '7', '2'
+    19, '7', '2'
 ),
 ( 
-    'The House Next Door', '7', '3'
+    15, '7', '3'
 ),
 ( 
-    'The Lost Tribe', '7', '2'
+    1, '7', '2'
 ),
 (
-    'The Power', '7', '2'
+    16, '7', '2'
 ),
 ( 
-    'The Wolf in the Whale', '7', '3'
+    17, '7', '3'
 ),
 ( 
-    'Under the Dome', '7', '2'
+    3, '7', '2'
 )
 GO
 
@@ -673,66 +671,66 @@ INSERT INTO [dbo].[BOOK_LOANS]
  [BookID], [BranchID], [CardNo], [DateOut], [DateDue]
 ) -- BookID = BOOKS.Title, BranchID = LIBRARY_BRANCH.BranchID, CardNo = BORROWER.CardNo, Date format YYYY-MM-DD
 VALUES
-('The Cassandra', 5, 1, '2018-12-16', '2019-02-17'),
-('After Alice',7,4,'2018-09-12','2018-12-11'),
-('The House Next Door',7,8,'2018-09-19','2018-12-18'),
-('Downhill from Here',7,2,'2018-04-06','2018-07-05'),
-('The Cassandra',3,10,'2018-11-23','2019-02-21'),
-('Nine Pints',3,1,'2018-11-03','2019-02-01'),
-('The Cassandra',3,6,'2018-08-26','2018-11-24'),
-('The Empire and the Five Kings',6,5,'2018-04-06','2018-07-05'),
-('Under the Dome',4,1,'2018-06-02','2018-08-31'),
-('Harry Potter and the Goblet of Fire',4,5,'2018-03-18','2018-06-16'),
-('Harry Potter and the Goblet of Fire',6,10,'2018-06-11','2018-09-09'),
-('The Cassandra',7,8,'2018-05-30','2018-08-28'),
-('Harry Potter and the Deathly Hallows',1,4,'2018-01-09','2018-04-09'),
-('The Lost Tribe',6,6,'2018-08-18','2018-11-16'),
-('Downhill from Here',4,4,'2019-01-17','2019-04-17'),
-('The Empire and the Five Kings',4,2,'2018-09-30','2018-12-29'),
-('My Own Words',7,5,'2018-04-21','2018-07-20'),
-('Joy on Demand: The Art of Discerning the Happiness Within',6,8,'2018-08-21','2018-11-19'),
-('Black House',1,1,'2018-05-25','2018-08-23'),
-('The Lost Tribe',5,4,'2018-04-02','2018-07-01'),
-('Harry Potter and the Philosophers Stone',3,8,'2018-12-22','2019-03-22'),
-('Harry Potter and the Order of the Phoenix',5,6,'2018-11-12','2019-02-10'),
-('The Empire and the Five Kings',7,5,'2018-09-26','2018-12-25'),
-('The Power',2,2,'2018-10-23','2019-01-21'),
-('The Empire and the Five Kings',3,9,'2019-02-12','2019-05-13'),
-('Black House',3,4,'2018-11-09','2019-02-07'),
-('The Power',2,4,'2018-09-08','2018-12-07'),
-('Black House',3,10,'2018-09-27','2018-12-26'),
-('My Own Words',1,8,'2018-01-09','2018-04-09'),
-('Harry Potter and the Philosophers Stone',5,10,'2018-03-06','2018-06-04'),
-('The House Next Door',7,7,'2018-06-28','2018-09-26'),
-('After Alice',6,3,'2018-12-01','2019-03-01'),
-('The Wolf in the Whale',3,7,'2018-05-04','2018-08-02'),
-('Harry Potter and the Order of the Phoenix',5,8,'2018-09-20','2018-12-19'),
-('Sapiens: A Brief History of Humankind',1,6,'2018-07-25','2018-10-23'),
-('The Cassandra',3,7,'2018-01-22','2018-04-22'),
-('Black House',3,4,'2018-05-07','2018-08-05'),
-('Harry Potter and the Order of the Phoenix',7,7,'2019-02-15','2019-05-16'),
-('Harry Potter and the Philosophers Stone',2,3,'2019-01-13','2019-04-13'),
-('The Wolf in the Whale',2,2,'2018-09-12','2018-12-11'),
-('The Empire and the Five Kings',7,4,'2018-10-17','2019-01-15'),
-('Sapiens: A Brief History of Humankind',5,3,'2018-07-02','2018-09-30'),
-('The Alchemist',5,7,'2018-05-09','2018-08-07'),
-('Downhill from Here',1,1,'2018-12-21','2019-03-21'),
-('The Wolf in the Whale',7,2,'2018-04-15','2018-07-14'),
-('The Lost Tribe',4,5,'2018-11-19','2019-02-17'),
-('Harry Potter and the Goblet of Fire',7,4,'2019-01-18','2019-04-18'),
-('Harry Potter and the Goblet of Fire',6,9,'2018-07-18','2018-10-16'),
-('The Lost Tribe',2,5,'2018-08-21','2018-11-19'),
-('My Own Words',7,10,'2018-10-27','2019-01-25'),
-('Nine Pints',3,1,'2019-02-12','2019-05-13'),
-('Downhill from Here',7,4,'2018-12-22','2019-03-22'),
-('After Alice',3,1,'2018-02-27','2018-05-28'),
-('Harry Potter and the Order of the Phoenix',6,4,'2019-01-10','2019-04-10'),
-('My Own Words',2,4,'2018-01-12','2018-04-12'),
-('Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking',4,4,'2018-10-18','2019-01-16'),
-('The House Next Door',7,6,'2019-01-09','2019-04-09'),
-('The Empire and the Five Kings',6,10,'2018-07-23','2018-10-21'),
-('Downhill from Here',3,2,'2018-09-23','2018-12-22'),
-('The Alchemist',3,10,'2018-12-23','2019-03-23'),
-('Nine Pints',2,9,'2018-11-29','2019-02-27')
+(18, 5, 1, '2018-12-16', '2019-02-17'),
+(9,7,4,'2018-09-12','2018-12-11'),
+(15,7,8,'2018-09-19','2018-12-18'),
+(20,7,2,'2018-04-06','2018-07-05'),
+(18,3,10,'2018-11-23','2019-02-21'),
+(22,3,1,'2018-11-03','2019-02-01'),
+(18,3,6,'2018-08-26','2018-11-24'),
+(19,6,5,'2018-04-06','2018-07-05'),
+(3,4,1,'2018-06-02','2018-08-31'),
+(11,4,5,'2018-03-18','2018-06-16'),
+(11,6,10,'2018-06-11','2018-09-09'),
+(18,7,8,'2018-05-30','2018-08-28'),
+(13,1,4,'2018-01-09','2018-04-09'),
+(1,6,6,'2018-08-18','2018-11-16'),
+(20,4,4,'2019-01-17','2019-04-17'),
+(19,4,2,'2018-09-30','2018-12-29'),
+(6,7,5,'2018-04-21','2018-07-20'),
+(10,6,8,'2018-08-21','2018-11-19'),
+(2,1,1,'2018-05-25','2018-08-23'),
+(1,5,4,'2018-04-02','2018-07-01'),
+(12,3,8,'2018-12-22','2019-03-22'),
+(14,5,6,'2018-11-12','2019-02-10'),
+(19,7,5,'2018-09-26','2018-12-25'),
+(16,2,2,'2018-10-23','2019-01-21'),
+(19,3,9,'2019-02-12','2019-05-13'),
+(2,3,4,'2018-11-09','2019-02-07'),
+(16,2,4,'2018-09-08','2018-12-07'),
+(2,3,10,'2018-09-27','2018-12-26'),
+(6,1,8,'2018-01-09','2018-04-09'),
+(12,5,10,'2018-03-06','2018-06-04'),
+(15,7,7,'2018-06-28','2018-09-26'),
+(9,6,3,'2018-12-01','2019-03-01'),
+(17,3,7,'2018-05-04','2018-08-02'),
+(14,5,8,'2018-09-20','2018-12-19'),
+(7,1,6,'2018-07-25','2018-10-23'),
+(18,3,7,'2018-01-22','2018-04-22'),
+(2,3,4,'2018-05-07','2018-08-05'),
+(14,7,7,'2019-02-15','2019-05-16'),
+(12,2,3,'2019-01-13','2019-04-13'),
+(17,2,2,'2018-09-12','2018-12-11'),
+(19,7,4,'2018-10-17','2019-01-15'),
+(7,5,3,'2018-07-02','2018-09-30'),
+(8,5,7,'2018-05-09','2018-08-07'),
+(20,1,1,'2018-12-21','2019-03-21'),
+(17,7,2,'2018-04-15','2018-07-14'),
+(1,4,5,'2018-11-19','2019-02-17'),
+(11,7,4,'2019-01-18','2019-04-18'),
+(11,6,9,'2018-07-18','2018-10-16'),
+(1,2,5,'2018-08-21','2018-11-19'),
+(6,7,10,'2018-10-27','2019-01-25'),
+(22,3,1,'2019-02-12','2019-05-13'),
+(20,7,4,'2018-12-22','2019-03-22'),
+(9,3,1,'2018-02-27','2018-05-28'),
+(14,6,4,'2019-01-10','2019-04-10'),
+(6,2,4,'2018-01-12','2018-04-12'),
+(4,4,4,'2018-10-18','2019-01-16'),
+(15,7,6,'2019-01-09','2019-04-09'),
+(19,6,10,'2018-07-23','2018-10-21'),
+(20,3,2,'2018-09-23','2018-12-22'),
+(8,3,10,'2018-12-23','2019-03-23'),
+(22,2,9,'2018-11-29','2019-02-27')
 GO
 
